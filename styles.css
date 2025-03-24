@@ -1,0 +1,54 @@
+body {
+    background: url("images/DRUM.webp") no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+}
+
+.keys {
+    display: flex;
+}
+
+.key {
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.07s ease; /* Ensure transform transition applies to all keys */
+    min-width: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.key kbd {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.key span {
+    font-size: 14px;
+    color: yellow;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+}
